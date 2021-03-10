@@ -1,0 +1,104 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(168, 173, 183);
+  display: grid;
+  place-items: center;
+}
+
+.input {
+  height: 50px;
+  width: 80%;
+  border-radius: 12px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input {
+  background: none;
+  border: none;
+  flex: 1;
+  margin-left: 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input button {
+  margin-right: 8px;
+  background-color: rgb(214, 213, 213);
+  color: red;
+  border: none;
+  border-radius: 10px;
+  /* height: 30px;
+  width: 50px; */
+  padding: 0.9em;
+}
+
+.app__container {
+  height: 650px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(232, 234, 237);
+  border-radius: 12px;
+  padding: 32px 0;
+}
+
+.app__todoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.todoItem {
+  display: flex;
+  width: 80%;
+  margin: 6px 4px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 10px;
+  align-items: center;
+}
+
+.todoItem p {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.todoItem--done {
+  text-decoration: line-through;
+}
+
+.todoItem input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.todoItem button {
+  color: red;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em;
+  background-color: rgb(214, 213, 213);
+  cursor: pointer;
+}
